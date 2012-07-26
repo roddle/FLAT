@@ -1,0 +1,25 @@
+*** FLAT ***
+
+
+* REQUIREMENTS
+
+FLAT has the following dependencies and requires development headers for each:
+	allegro5
+	allegro5-addon-ttf
+	allegro5-addon-audio
+	allegro5-addon-acodec
+	allegro5-addon-image
+
+
+* COMPILATION
+
+Currently we have no build system. Longer term, it would be nice to have project files/build scripts for appropriate IDEs/platforms.
+The following command is what we use to compile FLAT using the GCC under MacOS and Linux (it should work with MinGW under Windows as well). Running it from within the folder that this file is in will create the FLAT executable in the out folder.
+
+	g++ src/*.cpp -o out/FLAT -L/usr/local/lib -lallegro -lallegro_ttf -lallegro_audio -lallegro_acodec -lallegro_image -lallegro_main -lallegro_primitives -lallegro_font
+
+After that, run the newly created FLAT binary from the out folder.
+
+Don't forget to read the README for play instructions :)
+
+Enjoy!
