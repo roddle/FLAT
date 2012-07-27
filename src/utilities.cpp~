@@ -35,11 +35,25 @@ void Print(string output, vec2 v) {
 }
 
 void Alert(const char* msg) {
-	//TODO: Implement alert prompts
+	/*al_show_native_message_box(
+     NULL,
+     "Warning",
+     msg,
+     NULL,
+     NULL,
+     ALLEGRO_MESSAGEBOX_WARN
+  );*/
 }
 
 void Error(const char* msg) {
-	//TODO: Implement error prompts
+	/*al_show_native_message_box(
+     NULL,
+     "Error",
+     msg,
+     NULL,
+     NULL,
+     ALLEGRO_MESSAGEBOX_ERROR
+  );*/
 }
 
 float random(float scale) {

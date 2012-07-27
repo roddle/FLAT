@@ -22,7 +22,7 @@ along with FLAT.  If not, see <http://www.gnu.org/licenses/>.
 
 #include <iostream>
 #include <string>
-#include <allegro5/allegro_native_dialog.h>
+#include <cstdlib>
 
 #include "vec2.h"
 

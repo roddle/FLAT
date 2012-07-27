@@ -18,39 +18,27 @@ along with FLAT.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 
-#include "utilities.h"
+//utilities.h
+
+#include <iostream>
+#include <string>
+#include <cstdlib>
+//#include <allegro5/allegro_native_dialog.h>
+
+#include "vec2.h"
+
+#ifndef __UTILITIES_H_LOCK__
+#define __UTILITIES_H_LOCK__
 
 using namespace std;
 
-void Print(string output) {
-	cout<<output<<"\n";
-}
+void Print(string output);
+void Print(string output, float n);
+void Print(string output, vec2 v);
+void Alert(const char* msg);
+void Error(const char* msg);
+float random(float scale);
+bool chance(float chance);
+float mod(float a, float b);
 
-void Print(string output, float n) {
-	cout<<output<<" "<<n<<"\n";
-}
-
-void Print(string output, vec2 v) {
-	cout<<output<<" ("<<v.x<<", "<<v.y<<")"<<"\n";
-}
-
-void Alert(const char* msg) {
-	//TODO: Implement alert prompts
-}
-
-void Error(const char* msg) {
-	//TODO: Implement error prompts
-}
-
-float random(float scale) {
-	return (((float)(rand()%20000-10000))/10000.0f)*scale;
-}
-
-bool chance(float chance) {
-	return rand()%30000<chance*30000.0f;
-}
-
-float mod(float a, float b) {
-	int n = (int)(a/b);
-	return a-b*n;
-}
+#endif // __UTILITIES_H_LOCK__
