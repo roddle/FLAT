@@ -63,49 +63,63 @@ int GraphicsManager::initialize(int resx, int resy) {
 
 	display = NULL;
 
+	Print("Initialising Allegro...");
 	//Initialize allegro and required addons
 	if(!al_init()) {
 		Print("Failed to initialize allegro!");
 		return 0;
 	}
 
+	Print("Initialising Allegro primitives addon...");
 	if(!al_init_primitives_addon()) {
 		Print("Failed to initialize primitives addon!");
 		return 0;
 	}
 
+	Print("Initialising Allegro image addon...");
 	if(!al_init_image_addon()) {
 		Print("Failed to initialize image addon!");
 		return 0;
 	}
-
+	
+	Print("Initialising Allegro font addon...");
 	al_init_font_addon();
 
+	Print("Initialising Allegro TTF addon...");
 	if(!al_init_ttf_addon()) {
 		Print("Failed to initialize ttf addon!");
 		return 0;
 	}
 
+	Print("Initialising Allegro audio addon...");
 	if(!al_install_audio()) {
 		Print("Failed to initialize audio addon!");
 		return 0;
 	}
 
+
+	Print("Initialising Allegro audio codecs addon...");
 	if(!al_init_acodec_addon()) {
 		Print("Failed to initialize audio codec addon!");
 		return 0;
 	}
 
+
+	Print("Reserving audio samples addon...");
 	if(!al_reserve_samples(16)){
 		Print("Failed to reserve samples!");
 		return -1;
 	}
 
+
+	Print("Initialising mouse...");
 	if(!al_install_mouse()) {
 		Print("Failed to initialize mouse");
 		return 0;
 	}
 
+
+	Print("Initialising keyboard...");
 	if(!al_install_keyboard()) {
 		Print("Failed to initialize keyboard");
 		return 0;
