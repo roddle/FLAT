@@ -94,7 +94,7 @@ http://matrep.parastudios.de/index.php?action=view&material=290-crystal
 * There are invisible crystals that the player can bump into
 * The MacOS version of the Allegro 5 library has a bug preventing mouse input from working correctly in FLAT. MacOS users will need to use the left and right arrow keys to look around.
 * On rare occasions, enemies may not spawn on MacOS
-
+* Arch Linux users have reported crashes when initialising audio. A workaround can be found here: https://github.com/Cheeseness/FLAT/issues/32
 
 
 6. DEPENDENCIES
