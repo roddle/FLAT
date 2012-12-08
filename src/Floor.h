@@ -51,12 +51,12 @@ class Floor : public DrawableObject
 
 		ALLEGRO_BITMAP* sky[2];
 		ALLEGRO_BITMAP* ice[2];
-		ALLEGRO_BITMAP* scenery[26];
+		ALLEGRO_BITMAP* scenery[27];
 		ALLEGRO_BITMAP* stars;
 
-		float sceneryAngle[26];
-		float sceneryScale[26];
-		vec2 sceneryCenter[26];
+		float sceneryAngle[27];
+		float sceneryScale[27];
+		vec2 sceneryCenter[27];
 
 		vec3 position;
 		float tilt;

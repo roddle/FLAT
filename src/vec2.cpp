@@ -99,6 +99,7 @@ float distanceBetween(vec2 v1, vec2 v2) {
 
 vec2 normalize(vec2 v) {
 	float l = length(v);
+	if (l == 0.0f) return vec2(0.0f, 0.0f);
 	return vec2(v.x/l, v.y/l);
 }
 

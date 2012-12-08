@@ -28,10 +28,6 @@ AudioManager::AudioManager()
 
     currentSample = new ALLEGRO_SAMPLE_ID();
 
-    if(!al_init_acodec_addon())
-        cout<<"couldnt install audio codecs"<<endl;
-
-
     normalMusic = al_load_sample("music/normal.wav");
     combatMusic = al_load_sample("music/combat.wav");
     dragonMusic = al_load_sample("music/dragon.wav");
@@ -83,7 +79,9 @@ void AudioManager::stopAudio()
 
 void AudioManager::setAudioCue(ALLEGRO_SAMPLE* newCue)
 {
-    al_stop_sample(currentSample);
+    static bool first = true;
+    if (!first)
+        first = false, al_stop_sample(currentSample);
     al_play_sample(newCue, 0.7f, 0.0f, 1.0f, ALLEGRO_PLAYMODE_LOOP, currentSample);
 }
 

@@ -61,6 +61,7 @@ Player::Player()
 	frictionmodifier = 0.0f;
 
 	lean = 0.0f;
+	leanmodifier = 0.0f;
 
 	holdingBack = false;
 	jumping = false;
@@ -239,12 +240,11 @@ void Player::update() {
 
 	if(wantsToJump && holdingLeft) {
 		vec2 direction = normalize(vec2(-sinAngle, cosAngle));
-		float push = JUMP_PUSH - 2*JUMP_PUSH*(dot(normalize(velocity), direction));
+		float push = length(velocity) == 0 ? 0 : JUMP_PUSH - 2*JUMP_PUSH*(dot(normalize(velocity), direction));
 
 		if(push < 0) {
 			push = 0;
 		}
-
 		velocity += direction*push;
 		jumpPhase = PI;
 		jumpDTime = JUMP_DTIME;

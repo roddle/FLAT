@@ -63,5 +63,6 @@ float length(vec3 v) {
 
 vec3 normalize(vec3 v) {
 	float len = length(v);
+	if (len == 0.0f) return vec3(0.0f, 0.0f, 0.0f);
 	return vec3(v.x/len, v.y/len, v.z/len);
 }

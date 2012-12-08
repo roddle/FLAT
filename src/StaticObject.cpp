@@ -24,6 +24,7 @@ StaticObject::StaticObject()
 {
 	scale = 0.0f;
 	jumpable = false;
+	//playerAngle = 0.0f;
 }
 
 StaticObject::~StaticObject()

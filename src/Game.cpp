@@ -276,7 +276,7 @@ int Game::initialize() {
 
 	floor = new Floor();
 
-    graphicsMan->pushDrawableObject(floor);
+	graphicsMan->pushDrawableObject(floor);
 	graphicsMan->pushDrawableObject(world3D);
 	graphicsMan->pushDrawableObject(player);
 	graphicsMan->pushDrawableObject(fpsText);

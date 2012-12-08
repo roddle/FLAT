@@ -36,6 +36,7 @@ void FrameContainer::push(DrawableBitmap o) {
 
 void FrameContainer::setIndex(int i) {
 	index = i;
+	assert(index >= 0);
 	//index = 0;
 }
 
