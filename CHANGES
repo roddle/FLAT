@@ -1,0 +1,65 @@
+0.1 (unreleased)
+=========
+
+* Fixed GCC compiler warnings
+* Fixed uninitialised lean variables in Player
+* Fixed bug with scenery array size
+* Fixed frame container array index bug
+* Fixed MacOS mouse bug (fixed upstream in Allegro)
+
+
+
+Post-7DFPS (2012-06-20)
+=======================
+
+Released to address outstanding issues and respond to insights gained from feedback on the initial 7DFPS builds.
+
+* Adjusted starting healthkit count (is now 0)
+* Adjusted supply capsule healthkit count (is now 3)
+* Adjusted SMG damage (slightly more powerful)
+* Adjusted enemy skater spawn count and max skater variable (now is linked to how many weapons you’ve picked up)
+* Adjusted enemy skater damage (slightly reduced)
+* Adjusted enemy skater health (halved)
+* Adjusted dragon head health (halved)
+* Adjusted dragon terminal flee velocity (reduced)
+* Added maximum dragon flee distance
+* Added pain sounds
+* Added death sound
+* Added skating sounds for enemy skaters
+* Added firing sound to enemy skaters
+* Added minimum firing distance for enemy skaters (to stop point blank shots)
+* Added pain sounds for enemy skaters
+* Added death sounds for enemy skaters
+* Added pain sounds for dragon
+* Added death sound for dragon
+* Adjusted supply capsule visual indicator ("skybeam")
+* Added maximum spawn time for supply capsules (pickupTime wasn’t actually being reset when supply capsules spawned)
+* Added supply capsule spawn sound
+* Added supply capsule pickup sound
+* Added supply capsule destruction
+* Added splash screen for death ending
+* Added automatic quit after dragon slaying ending splash screen
+* Added splash screen for pause state
+* Added pause state
+* Adjusted number of scuff marks (tripled)
+* Adjusted aspect of scuffmark images (quick fix to sidestep in-engine transformation)
+* Added background scenery
+* Adjusted keyboard look speed (increased)
+* Added alternate health key (Q and H)
+* Added alternate firing key (X and Up)
+* Adjusted dying time (halved)
+* Adjusted shooting logic to prevent players from shooting during the last half of their death
+* Added additional console output to track spawning
+* Added default value for Player->gameOver (false)
+* Added basic context sensitive music system
+* Added music tracks by Anton Riehl
+
+
+7DFPS (2012-06-16)
+==================
+
+Released at the conclusion of the 7 Day First Person Shooter Challenge.
+
+* Initial development by SteelRaven7, Cheeseness and jo_shadow
+
+
