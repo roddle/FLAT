@@ -22,7 +22,7 @@ along with FLAT.  If not, see <http://www.gnu.org/licenses/>.
 
 DrawableText::DrawableText()
 {
-	text = "Nothing";
+	text = (char*)"Nothing";
 }
 
 DrawableText::DrawableText(ALLEGRO_FONT* _font, ALLEGRO_COLOR _color)
@@ -45,6 +45,6 @@ void DrawableText::setPosition(vec2 _position) {
 	position = _position;
 }
 
-void DrawableText::setText(char* _text) {
-	text = _text;
+void DrawableText::setText(const char* _text) {
+	text = (char*)_text;
 }

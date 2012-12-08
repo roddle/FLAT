@@ -147,7 +147,7 @@ class Game
 		Floor* floor;
 
 		DrawableText* fpsText;
-        DrawableText* hintText;
+		DrawableText* hintText;
 
 		Player* player;
 

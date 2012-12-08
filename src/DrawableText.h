@@ -36,7 +36,7 @@ class DrawableText : public DrawableObject
 
 		void draw();
 		void setPosition(vec2 _position);
-		void setText(char* _text);
+		void setText(const char* _text);
 	protected:
 	private:
 		ALLEGRO_FONT* font;
