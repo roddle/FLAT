@@ -79,10 +79,16 @@ void AudioManager::stopAudio()
 
 void AudioManager::setAudioCue(ALLEGRO_SAMPLE* newCue)
 {
-    static bool first = true;
-    if (!first)
-        first = false, al_stop_sample(currentSample);
-    al_play_sample(newCue, 0.7f, 0.0f, 1.0f, ALLEGRO_PLAYMODE_LOOP, currentSample);
+	static bool first = true;
+	if (!first)
+	{
+		al_stop_sample(currentSample);
+	{
+	else
+	{
+		first = false;
+	}
+	al_play_sample(newCue, 0.7f, 0.0f, 1.0f, ALLEGRO_PLAYMODE_LOOP, currentSample);
 }
 
 AudioManager::~AudioManager()
