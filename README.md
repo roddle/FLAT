@@ -2,11 +2,13 @@
 ===========
 
 1. Introduction
-2. Controls
-3. Credits
-4. Resources
-5. Known Issues
-6. Dependencies
+2. Building from source
+3. Story
+4. Controls
+5. Credits
+6. Resources
+7. Known Issues
+8. Dependencies
 
 
 
@@ -31,7 +33,22 @@ Thanks again, and don't hesitate to leave feedback if you feel like it!
 Please see the INSTALL file for compilation instructions.
 
 
-2. STORY
+2. BUILDING FROM SOURCE
+=======================
+
+FLAT uses `cmake` to automatically build the required makefiles, so `cmake` is a required dependency if you want to build FLAT from source using this method.
+
+In the root directory (FLAT):
+
+`$ cmake .`
+
+`$ make`
+
+The binary should be located in the `out`-folder after compilation.
+
+
+
+3. STORY
 ========
 
 You play as the last remaining individual of a race who has fallen under the mind control of the evil Pulse Dragon. Marooned on a crystaline world, you must fight your way through hordes of your own kind to slay the mighty Pulse Dragon and free your people.
@@ -40,7 +57,7 @@ You play as the last remaining individual of a race who has fallen under the min
 
 
 
-2. CONTROLS
+4. CONTROLS
 ===========
 
 Look around using the mouse, or the arrow keys.
@@ -59,7 +76,7 @@ The escape key will pause the game.
 
 
 
-3. CREDITS
+5. CREDITS
 ==========
 
 You can find us on twitter:
@@ -73,7 +90,7 @@ Special thanks to aaorris
 
 
 
-4. RESOURCES
+6. RESOURCES
 ============
 
 Shotgun sound based on sound by PhreaKsAccount 
@@ -87,7 +104,7 @@ http://matrep.parastudios.de/index.php?action=view&material=290-crystal
 
 
 
-5. KNOWN ISSUES
+7. KNOWN ISSUES
 ===============
 
 * Sometimes, on rare occasions, the camera will spin wildly at the start of the game on MacOS
@@ -97,7 +114,7 @@ http://matrep.parastudios.de/index.php?action=view&material=290-crystal
 * Arch Linux users have reported crashes when initialising audio. A workaround can be found here: https://github.com/Cheeseness/FLAT/issues/32
 
 
-6. DEPENDENCIES
+8. DEPENDENCIES
 ===============
 
 FLAT uses Allegro 5 ( http://alleg.sourceforge.net/ ). You will need the following packages.
