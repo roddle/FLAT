@@ -39,9 +39,10 @@ Please see the INSTALL file for compilation instructions.
 FLAT uses `cmake` to automatically build the required makefiles, so `cmake` is a required dependency if you want to build FLAT from source using this method.
 
 In the root directory (FLAT):
+
 `$ cmake .`
 
-`make`
+`$ make`
 
 The binary should be located in the `out`-folder after compilation.
 
